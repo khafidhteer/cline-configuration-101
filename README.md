@@ -54,10 +54,10 @@ Or [install Cline in VS Code](LEVEL-1-QUICK-START/guides/01-install-vscode.md) f
 📁 cline-configuration-101/
 ├── 📄 GETTING-STARTED.md     ← Start here (hub with "I want to..." navigation)
 ├── 📄 ROADMAP.md             ← Full learning path with time estimates
-├── 📁 LEVEL-1-QUICK-START/   ← 6 guides + configs
-├── 📁 LEVEL-2-EFFICIENT/     ← 8 guide stubs
-├── 📁 LEVEL-3-POWER-USER/    ← 7 guide stubs
-├── 📁 LEVEL-4-SCALE/         ← 5 guide stubs
+├── 📁 LEVEL-1-QUICK-START/   ← 6 guides + 2 configs
+├── 📁 LEVEL-2-EFFICIENT/     ← 8 guides + configs
+├── 📁 LEVEL-3-POWER-USER/    ← 7 guides + configs
+├── 📁 LEVEL-4-SCALE-WITH-TEAM/ ← 5 guides
 ├── 📁 CHEAT-SHEETS/          ← CLI commands, pricing, troubleshooting
 └── 📁 APPENDIX/              ← Glossary, how-to
 ```

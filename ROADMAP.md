@@ -44,7 +44,7 @@ VS Code vs CLI ──→   Memory Bank ─────→   Connectors ───
 | 6 | [VS Code vs CLI](LEVEL-1-QUICK-START/guides/06-vscode-vs-cli.md) | When to move from VS Code to CLI |
 
 **Configs to copy:**
-- [OpenRouter Config for VS Code](LEVEL-1-QUICK-START/configs/openrouter-config-vscode.json)
+- [OpenRouter Config for VS Code](LEVEL-1-QUICK-START/configs/openrouter-config-vscode.md)
 - [Minimal .clineignore](LEVEL-1-QUICK-START/configs/minimal.clineignore)
 
 ---

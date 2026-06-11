@@ -1,6 +1,6 @@
 # 🟢 Level 1: Quick Start — Get Cline Working Today
 
-[⬅ Back to Home](GETTING-STARTED.md) | [📖 Full Roadmap](../ROADMAP.md)
+[⬅ Back to Home](../GETTING-STARTED.md) | [📖 Full Roadmap](../ROADMAP.md)
 
 ---
 
@@ -97,7 +97,7 @@ After completing this level, confirm you can:
 
 | File | What It Does |
 |------|-------------|
-| [OpenRouter Config (VS Code)](configs/openrouter-config-vscode.json) | Pre-filled config for VS Code setup |
+| [OpenRouter Config (VS Code)](configs/openrouter-config-vscode.md) | Reference for VS Code setup |
 | [Minimal .clineignore](configs/minimal.clineignore) | Stops Cline from loading unnecessary files |
 
 ---

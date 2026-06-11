@@ -1,0 +1,37 @@
+name: Cline PR Review
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Cline CLI
+        run: npm install -g cline
+
+      - name: Configure OpenRouter
+        run: |
+          cline auth --provider openrouter \
+            --apikey "${{ secrets.OPENROUTER_API_KEY }}" \
+            --modelid deepseek/deepseek-chat
+
+      - name: Review PR
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cline --auto-approve true \
+            "Review PR #${PR_NUMBER}.
+            1. Use 'gh pr view' and 'gh pr diff' to get context
+            2. Check for bugs, security issues, and code quality
+            3. Post a comment with your review"

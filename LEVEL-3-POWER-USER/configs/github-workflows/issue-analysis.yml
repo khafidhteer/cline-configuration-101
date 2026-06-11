@@ -1,0 +1,33 @@
+name: Cline Issue Analysis
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  analyze:
+    if: contains(github.event.comment.body, '@cline')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Cline CLI
+        run: npm install -g cline
+
+      - name: Configure OpenRouter
+        run: |
+          cline auth --provider openrouter \
+            --apikey "${{ secrets.OPENROUTER_API_KEY }}" \
+            --modelid deepseek/deepseek-chat
+
+      - name: Analyze Issue
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMENT: ${{ github.event.comment.body }}
+        run: |
+          cline --auto-approve true \
+            "Analyze issue #${ISSUE_NUMBER} and summarize the root cause. User asked: ${COMMENT}"

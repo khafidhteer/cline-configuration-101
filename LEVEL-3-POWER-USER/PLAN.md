@@ -114,11 +114,11 @@ After completing this level, confirm you can:
 
 | File | What It Does |
 |------|-------------|
-| `model-configs/haiku-config.json` | Cheap model config (~$0.80/1M) |
-| `model-configs/sonnet-config.json` | Mid-tier model config (~$3.00/1M) |
-| `model-configs/opus-config.json` | Premium model config (~$15.00/1M) |
+| `model-configs/haiku-config.md` | Cheap model config (~$0.80/1M) |
+| `model-configs/sonnet-config.md` | Mid-tier model config (~$3.00/1M) |
+| `model-configs/opus-config.md` | Premium model config (~$15.00/1M) |
 | `github-workflows/pr-review.yml` | Auto-review PRs workflow |
-| `github-workflows/issue-rca.yml` | Issue analysis workflow |
+| `github-workflows/issue-analysis.yml` | Issue analysis workflow |
 | `mcp-servers.json` | MCP server definitions |
 
 ---
