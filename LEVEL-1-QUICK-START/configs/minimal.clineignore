@@ -1,0 +1,55 @@
+# ==========================================
+# Minimal .clineignore for Solo Founders
+# ==========================================
+#
+# This file tells Cline to SKIP these files/folders
+# when analyzing your project.
+#
+# Why this matters:
+# Without .clineignore, Cline loads your ENTIRE project
+# into context — including node_modules, build folders,
+# and lock files. This wastes tokens and costs money.
+#
+# With this file: ~50,000 tokens baseline
+# Without this file: ~200,000+ tokens baseline
+# ==========================================
+
+# Dependencies (these are HUGE)
+node_modules/
+**/node_modules/
+vendor/
+.venv/
+venv/
+
+# Build outputs
+/dist/
+/build/
+/.next/
+/out/
+/target/
+
+# Environment files (contains secrets)
+.env
+.env.*
+!.env.example
+
+# Lock files (generated, large)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing coverage
+/coverage/
+
+# Large data files
+*.csv
+*.xlsx
+*.sqlite
+*.db
+
+# Generated code
+*.min.js
+*.map
+
+# Git (Cline doesn't need this)
+.git/
