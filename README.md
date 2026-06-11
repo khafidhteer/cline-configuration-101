@@ -52,15 +52,25 @@ Or [install Cline in VS Code](LEVEL-1-QUICK-START/guides/01-install-vscode.md) f
 
 ```
 📁 cline-configuration-101/
-├── 📄 GETTING-STARTED.md     ← Start here (hub with "I want to..." navigation)
+├── � GETTING-STARTED.md     ← Start here (hub with "I want to..." navigation)
 ├── 📄 ROADMAP.md             ← Full learning path with time estimates
-├── 📁 LEVEL-1-QUICK-START/   ← 6 guides + 2 configs
+├── � LEVEL-1-QUICK-START/   ← 6 guides + 2 configs
 ├── 📁 LEVEL-2-EFFICIENT/     ← 8 guides + configs
 ├── 📁 LEVEL-3-POWER-USER/    ← 7 guides + configs
 ├── 📁 LEVEL-4-SCALE-WITH-TEAM/ ← 5 guides
-├── 📁 CHEAT-SHEETS/          ← CLI commands, pricing, troubleshooting
+├── � CHEAT-SHEETS/          ← CLI commands, pricing, troubleshooting
 └── 📁 APPENDIX/              ← Glossary, how-to
 ```
+## What's Inside
+
+| Level | Guides | Configs | What You'll Learn |
+|-------|--------|---------|-------------------|
+| 🟢 **Level 1** | 6 | 2 | VS Code install, CLI install, OpenRouter setup, first task, Plan vs Act, VS Code vs CLI |
+| 🟡 **Level 2** | 8 | 5 | Rules, checkpoints, auto-approve, context hacks, memory bank, cost control, subagents |
+| 🔴 **Level 3** | 7 | 6 | MCP servers, model orchestration, GitHub Actions, connectors, scheduled agents, skills |
+| ⚫ **Level 4** | 5 | 0 | Team onboarding, remote config, OpenTelemetry, supply chain security, enterprise |
+
+**Total: 55+ files** — 26 guides, 13 configs, 4 cheat sheets, glossary with 30+ linked definitions.
 
 [📂 How this repo works →](APPENDIX/how-this-repo-works.md)
 
